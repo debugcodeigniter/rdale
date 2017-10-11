@@ -6,6 +6,7 @@ if (get_magic_quotes_gpc()) {
     $gpc = array(&$_GET, &$_POST, &$_COOKIE, &$_REQUEST);
     array_walk_recursive($gpc, 'magicQuotes_awStripslashes');
 }
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
